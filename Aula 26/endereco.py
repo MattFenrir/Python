@@ -26,6 +26,9 @@ class Endereco:
     def cidade(self):
           return self.__cidade
 
+    def listar(self): # void : String
+        return f'{self.rua}, nº {self.numero}, {self.bairro}, {self.cidade.nome} -  {self.cidade.estado.sigla}'
+
 class Cidade:
     def __init__(self, nome, estado):
         self.__nome = nome
